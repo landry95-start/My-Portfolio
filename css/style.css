@@ -1,0 +1,555 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #080808;
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*header page*/
+
+#header{
+    width: 100%;
+    margin-bottom: 200px;
+
+}
+
+.countainer{
+    padding: 20px 10%;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-bar .logo{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-bar .logo::first-letter{
+    color: #ff004f;
+}
+
+.nav-bar .nav-link ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-bar .nav-link ul li,i{
+    margin: 10px 20px;
+}
+
+
+.nav-bar .nav-link ul li a{
+    position: relative;
+}
+
+.nav-bar .nav-link ul li a::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0px;
+    background-color: orange;
+    border-radius: 5px;
+    display: block;
+    transition: all 1s ease;
+}
+
+.nav-bar .nav-link ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1 span{
+    color: rgb(146, 14, 36);
+}
+
+.header-text h1{
+    margin-top: 20px;
+    font-size: 60px;
+}
+
+/*About page style*/
+
+#about-section{
+    margin-bottom: 200px;
+}
+
+.about-content{
+    display: flex;
+    padding: 100px 10%;
+    width: 100%;
+}
+
+.about-content .about-img{
+    width: 50%;
+    margin-right: 50px;
+}
+
+.about-content .about-img img{
+    width: 100%;
+    border-radius: 10px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.about-content .about-msg{
+    width: 50%;
+}
+
+.about-content .about-msg h1{
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.about-msg p{
+    margin-bottom: 20px;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+
+}
+
+
+.tab-links::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0px;
+    background-color: rgb(238, 17, 54);
+    border-radius: 5px;
+    left: 0;
+    bottom: -8px;
+    transition: all 1s ease;
+}
+
+.tab-links.active::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 50%;
+    background-color: rgb(238, 17, 54);
+    border-radius: 5px;
+    left: 0;
+    bottom: -8px;
+    transition: all 1s ease;
+}
+
+.tab-links.active:hover::after{
+    width: 100%;
+}
+
+.tab-contents ul li{
+    list-style-type: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: #ff004f;
+    font-size: 14px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+/*service page style*/
+
+#service-section{
+    margin-bottom: 200px;
+}
+
+#service-section h1{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.service-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 300px;
+    grid-gap: 40px;
+    margin-top: 40px;
+}
+
+.service-content .service{
+    cursor: pointer;
+    border-radius: 25px;
+    background-color: #262626;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 40px;
+    transition: 0.8s ease;
+}
+
+
+.service-content .service:hover{
+    background-color: #ff004f;
+    transform: translateY(-10px);
+}
+
+.service-content .service i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.service-content .service h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.service-content .service a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+
+/*skills page style*/
+
+#skills-section{
+    margin-bottom: 200px;
+}
+
+#skills-section h1{
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 200px;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+
+.html-skill{
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    transition: 0.5s ease;
+}
+
+.html-skill:hover{
+    transform: scale(1.1);
+}
+
+.css-skill{
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    transition: 0.5s ease;
+}
+
+.css-skill:hover{
+    transform: scale(1.1);
+}
+
+.git-skill{
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    transition: 0.5s ease;
+}
+
+.git-skill:hover{
+    transform: scale(1.1);
+}
+
+/*work page style*/
+
+#porfolio-section{
+    padding: 20px 10%;
+}
+
+#portfolio-section h1{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+#portfolio-section .btn{
+    display: block;
+    padding: 15px 50px;
+    border: 1px solid #ff004f;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+    margin: 50px auto;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+#portfolio-section .btn:hover{
+    background-color: #ff004f;
+}
+
+.work-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 40px;
+    margin-top: 40px;
+}
+
+.work1{
+    position: relative;
+    overflow: hidden;
+}
+
+.work1 img{
+    width: 100%;
+    border-radius: 5px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.work1:hover img{
+    transform: scale(1.1);
+}
+
+.work1 .layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 40px;
+    text-align: center;
+    transition: all 0.8s ease;
+    z-index: 0;
+}
+
+.work1:hover .layer{
+    height: 100%;
+}
+
+.layer h3{
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Contact-section{
+    margin-top: 100px;
+}
+
+/*contact page style*/
+
+.Contact-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Contact-content h1{
+    margin-bottom: 40px;
+    font-size: 3em;
+}
+
+.Contact-content .links{
+    margin-top: 40px;
+}
+
+.Contact-content .links a{
+    margin-right: 12px;
+    text-decoration: none;
+    color: white;
+    border-radius: 50%;
+}
+
+
+.Contact-content .load-cv{
+    padding: 20px 30px;
+    margin-top: 50px;
+    border: none;
+    background-color: #ff004f;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.Contact-content .load-cv:hover{
+    box-shadow: 0 0 25px #ff004f;
+}
+
+
+.Contact-content form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Contact-content form input{
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    outline: none;
+    border: 1px solid;
+}
+
+.Contact-content form input:focus{
+    border-color: gold;
+}
+
+.Contact-content form textarea{
+    outline: none;
+    border: 1px solid #e1e1e1;
+    padding: 12px 15px;
+}
+
+.Contact-content form button{
+    width: 25%;
+    margin-top: 20px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ff004f;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.Contact-content form button:hover{
+    box-shadow: 0 0 25px #ff004f;
+}
+
+.contact-links li{
+    display: flex;
+}
+
+.contact-links li i{
+    color: #ff004f;
+}
+
+.contact-links li p{
+    position: relative;
+    top: 10px;
+}
+
+
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background-color: #262626;
+    font-weight: 300;
+    margin-top: 60px;
+}
+
+.copyright i{
+    color: #ff004f;
+}
+
+nav .fas{
+    display: none;
+}
+
+/*-------------css for small screens--------------*/
+
+@media screen and (max-width:600px) {
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+
+    .header-text h1{
+        font-size: 30px;
+    }
+
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+}

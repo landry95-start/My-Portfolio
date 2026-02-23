@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../fontawesome-free-7.1.0-web/css/all.min.css" rel="stylesheet">
+    <script src="../javascript/porfolio.js" defer></script>
+    <!--pdf librairie-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" 
+    integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" 
+    referrerpolicy="no-referrer"></script>
+    <title>Personnal Porfolio</title>
+</head>
+<body>
+    <section id="header">
+        <div class="countainer">
+            <nav class="nav-bar">
+                <a href="#" class="logo">LANDRY</a>
+                <div class="nav-link">
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about-section">About</a></li>
+                        <li><a href="#service-section">Services</a></li>
+                        <li><a href="#skills-section">Skills</a></li>
+                        <li><a href="#portfolio-section">Portfolio</a></li>
+                        <li><a href="#Contact-section">Contact</a></li>
+                        <i class="fas fa-times"></i>
+                    </ul>
+                </div>
+                <i class="fas fa-bars"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, i'm <span>Landry</span></h1>
+                <h1>Fosso from Cameroon</h1>
+            </div>
+        </div>
+    </section>
+
+    <!----About section---->
+    <section id="about-section">
+        <div class="about-content">
+            <div class="about-img">
+                <img src="../img/WhatsApp Image 2026-02-10 at 18.53.17.jpeg">
+            </div>
+            <div class="about-msg">
+                <h1>About Me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Non aspernatur nulla asperiores, alias recusandae error 
+                    accusantium quos temporibus explicabo eos at pariatur neque? 
+                    Velit laudantium explicabo iusto facere, libero voluptates.
+                    accusantium quos temporibus explicabo eos at pariatur neque? 
+                    Velit laudantium explicabo iusto facere, libero voluptates.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>App Development</span><br>Building Android/iOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021 - current</span><br>UI/UX Design training at ET Institute</li>
+                        <li><span>2019 - 2021</span><br>Team lead at start LLC.</li>
+                        <li><span>2017 - 2019</span><br>UI/UX Design Executive at coin Digital Ltd.</li>
+                        <li><span>2016 - 2017</span><br>Internship at ekart eCommerce.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2016</span><br>Designing Web/App interfaces</li>
+                        <li><span>2016</span><br>Web App Development</li>
+                        <li><span>2014t</span><br>Building Android/iOS apps</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Service section-->
+    <section id="service-section" class="countainer">
+        <h1>My Services</h1>
+        <div class="service-content">
+            <div class="service" >
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus sed ea facere unde similique inventore!</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus sed ea facere unde similique inventore!</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="service">
+                <i class="fab fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus sed ea facere unde similique inventore!</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+   
+    </section>
+
+    <!--Skills section-->
+    <section id="skills-section" class="countainer">
+        <h1>My Skills</h1>
+        <div class="skills">
+            <div class="html-skill">
+                <img src="../img/html-logo-removebg-preview.png" class="html-img">
+            </div>
+            <div class="css-skill">
+                <img  src="../img/css-removebg-preview.png" class="css-img">
+            </div>
+            <div class="css-skill">
+                <img  src="../img/javascript-removebg-preview.png" class="css-img">
+            </div>
+            <div class="git-skill">
+                <img src="../img/git-logo-removebg-preview.png" class="git-img">
+            </div>
+        </div>
+    </section>
+
+    <!--Work section-->
+    <section id="portfolio-section" class="countainer">
+        <h1>My works</h1>
+        <div class="work-content">
+            <div class="work1">
+                <img src="../img/WhatsApp Image 2026-02-02 at 09.05.31.jpeg">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The App connets you yo the talented people around the world.
+                        Download it from play store.
+                    </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work1">
+                <img src="../img/WhatsApp Image 2026-02-02 at 09.05.31.jpeg">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The App connets you yo the talented people around the world.
+                        Download it from play store.
+                    </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work1">
+                <img src="../img/WhatsApp Image 2026-02-02 at 09.05.31.jpeg">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The App connets you yo the talented people around the world.
+                        Download it from play store.
+                    </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <button class="btn">See more</button>
+    </section>
+
+    <!--contact section-->
+    <section id="Contact-section">
+        <div class="Contact-content countainer">
+            <div>
+                <h1>Contact Me</h1>
+                <div class="contact-links">
+                    <li>
+                        <i class="fa-brands fa-telegram"></i>
+                        <p>landryfosso97@gmail.com</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <p>6 89 09 05 81</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Yaounde, Cameroon</p>
+                    </li>
+                </div>
+                <div class="links">
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <button class="load-cv">Download CV</button>
+            </div>
+            <form>
+                <input type="text" placeholder="Enter your name" name="name" required="required" autocomplete="autocomplete">
+                <input type="email" placeholder="Enter your email" name="email" autocomplete="autocomplete">
+                <textarea cols="30" rows="10" placeholder="Enter your message"></textarea>
+                <button>Send Message</button>
+            </form>
+        </div>
+        <div class="copyright">
+            <p>© 2026 Landry FOSSO. All rights reserved.</p>
+        </div>
+    </section> 
+</body>
+</html>
