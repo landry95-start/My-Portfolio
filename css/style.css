@@ -74,6 +74,17 @@ html{
     width: 100%;
 }
 
+.nav-bar button{
+    width: 10%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ff004f;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 .header-text{
     margin-top: 20%;
     font-size: 30px;
@@ -445,7 +456,12 @@ html{
     width: 50%;
     display: flex;
     flex-direction: column;
+    border: 1px solid white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 100px;
 }
+
 
 .Contact-content form input{
     width: 100%;
@@ -463,6 +479,10 @@ html{
     outline: none;
     border: 1px solid #e1e1e1;
     padding: 12px 15px;
+}
+
+.Contact-content form textarea:focus{
+    border-color: gold;
 }
 
 .Contact-content form button{
@@ -506,50 +526,4 @@ html{
     margin-top: 60px;
 }
 
-.copyright i{
-    color: #ff004f;
-}
 
-nav .fas{
-    display: none;
-}
-
-/*-------------css for small screens--------------*/
-
-@media screen and (max-width:600px) {
-    .header-text{
-        margin-top: 100%;
-        font-size: 16px;
-    }
-
-    .header-text h1{
-        font-size: 30px;
-    }
-
-    nav .fas{
-        display: block;
-        font-size: 25px;
-    }
-
-    nav ul{
-        background: #ff004f;
-        position: fixed;
-        top: 0;
-        right: -200px;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
-    }
-
-    nav ul li{
-        display: block;
-        margin: 25px;
-    }
-
-    nav ul .fas{
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
-    }
-}
