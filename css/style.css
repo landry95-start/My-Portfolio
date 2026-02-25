@@ -74,6 +74,10 @@ html{
     width: 100%;
 }
 
+.nav-bar .nav-link ul .document a{
+    display: none;
+}
+
 .nav-bar button{
     width: 10%;
     height: 40px;
@@ -211,7 +215,7 @@ html{
 .service-content{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 300px;
+    grid-template-rows: 350px;
     grid-gap: 40px;
     margin-top: 40px;
 }
@@ -407,11 +411,12 @@ html{
     justify-content: center;
 }
 
+
+/*contact page style*/
+
 #Contact-section{
     margin-top: 100px;
 }
-
-/*contact page style*/
 
 .Contact-content{
     display: flex;
@@ -428,7 +433,7 @@ html{
 }
 
 .Contact-content .links a{
-    margin-right: 12px;
+    margin-right: 5px;
     text-decoration: none;
     color: white;
     border-radius: 50%;
@@ -526,4 +531,210 @@ html{
     margin-top: 60px;
 }
 
+ #open{
+    display: none;
+    cursor: pointer;
+}
 
+#close{
+    display: none;
+    cursor: pointer;
+}
+
+/*responsive portfolio*/
+
+@media screen and (max-width: 1000px) {
+
+
+    .nav-bar .nav-link{
+        position: absolute;
+        display: block;
+        background-color: rgba(255, 255, 255, 0.20);
+        backdrop-filter: blur(8px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        height: 80vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        margin-right: -100%;
+        z-index: 1;
+        transition: all 0.5s ease;
+    }
+
+    .nav-link.reduice{
+        margin-right: 0;
+    }
+
+    .nav-bar .nav-link ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-bar .nav-link ul li{
+        text-align: center;
+        border-bottom: 2px solid;
+    }
+
+    #open{
+        display: block;
+    }
+
+    #close{
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 20px;
+    }
+
+    .nav-bar .nav-link ul .document a{
+        display: block;
+    }
+
+    .nav-bar button{
+        display: none;
+    }
+
+    .header-text{
+        font-size: 16px;
+        margin-top: 70%;
+    }
+
+    .header-text h1{
+        font-size: 30px;
+    }
+
+    /*modification du titre About*/
+    .about-content .about-msg h1{
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    .about-content .about-img{
+        width: 100%;
+    
+    }
+
+    .about-content .about-msg{
+        width: 100%;
+    }
+
+    .about-content .about-msg h1{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+    /*about content*/
+    .about-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*modification du titre My Service*/
+    #service-section h1{
+        font-size: 2em;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    /*modification du titre my skills*/
+    #skills-section h1{
+        font-weight: bold;
+        font-size: 2em;
+        text-align: center;
+    }
+
+    /*alignement des competences verticalement*/
+    .skills{
+        display: flex;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 100px;
+        gap: 25px;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .git-skill{
+        width: 100%;
+    }
+
+    /* modification du titre my work*/
+    #portfolio-section h1{
+        font-size: 2em;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    /*alignement vertical du travail*/
+
+    .work-content{
+        display: flex;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 40px;
+        margin-top: 40px;
+        flex-direction: column;
+    }
+
+    .service-content{
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 350px;
+    grid-gap: 40px;
+    margin-top: 40px;
+}
+
+    /*bouton cv du bas au niveau du formulaire*/
+    .Contact-content form button{
+        width: 100%;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius:50px ;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+    }
+
+    #service-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*contact page*/
+    
+
+    .Contact-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Contact-content h1{
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .Contact-content form{
+        width: 100%;
+    }
+
+    .contact-links{
+        border: 1px solid white;
+    }
+
+    .load-cv{
+        width: 100%;
+    }
+
+    /*copyright*/
+    .copyright{
+        width: 100%;
+    }
+}

@@ -16,3 +16,19 @@ function opentab(tabname){
 
     document.getElementById(tabname).classList.add('active-tab');
 }
+
+//nav-bar responsive;
+
+const fermeture = document.getElementById('close');
+const ouverture = document.getElementById('open');
+const Navlink = document.querySelector('.nav-link');
+
+fermeture.addEventListener('click',()=>{
+    Navlink.classList.remove('reduice');
+    ouverture.style.display='block';
+});
+
+ouverture.addEventListener('click',()=>{
+    Navlink.classList.add('reduice');
+    ouverture.style.display='none';
+});
