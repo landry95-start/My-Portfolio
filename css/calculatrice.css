@@ -1,0 +1,83 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    max-width: 100vw;
+}
+
+/*Caracteristiques de la calculatice*/
+
+#calculator{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 1px #a8a8a8;
+}
+
+/*Caracteristiques de tous les boutons*/
+
+.touches{
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: repeat(5, 50px);
+    gap: 7px;
+}
+
+button{
+    border: none;
+    outline: none;
+    background-color: white;
+    box-shadow: 0 3px #a8a8a8;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+button:active{
+    box-shadow: 0 1px #a8a8a8;
+    transform: translateY(2px);
+}
+
+button[data-key="8"]{
+    background-color: orange;
+    font-weight: bold;
+}
+
+button[data-key="13"]{
+    grid-column: span 2;
+    background-color: rgb(13, 212, 13);
+    font-weight: bold;
+    color: white;
+}
+
+/*caracteristiques de l'ecran*/
+
+.ecran{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(171, 171, 228);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 5px;
+    font-size: 25px;
+}
+
+/*caracteristiques du bouton egal*/
+
+
+/*mise en responsive de l'ecran*/
+
